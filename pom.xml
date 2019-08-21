@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>modules.comun</groupId>
+    <artifactId>modules-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    
+    <name>modules-parent</name>
+    
+ 
+     <modules>
+   		 <module>portlets</module>
+   		 <module>services</module>
+ 	 </modules>
+  
+  
+ 	 <repositories>
+	    <repository>
+	        <id>liferay-public-releases</id>
+	        <name>Liferay Public Releases</name>
+	        <url>https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+ 	 </repositories>
+	
+ 	 <pluginRepositories>
+	    <pluginRepository>
+	        <id>liferay-public-releases</id>
+	        <url>https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </pluginRepository>
+ 	 </pluginRepositories>
+  
+    
+  	<properties>
+		<liferay.version>6.2.5</liferay.version>
+		<liferay.maven.plugin.version>6.2.5</liferay.maven.plugin.version>
+	</properties>
+  
+  
+   	<profiles>
+        <profile>
+            <id>Dev</id>
+            <properties>
+				<liferay.auto.deploy.dir>${mi.entorno}\deploy</liferay.auto.deploy.dir>
+				<liferay.app.server.deploy.dir>${mi.entorno}\tomcat-7.0.62\webapps</liferay.app.server.deploy.dir>
+				<liferay.app.server.lib.global.dir>${mi.entorno}\tomcat-7.0.62\lib\ext</liferay.app.server.lib.global.dir>
+				<liferay.app.server.portal.dir>${mi.entorno}\tomcat-7.0.62\webapps\ROOT</liferay.app.server.portal.dir>
+				<alt.build.dir></alt.build.dir>
+            </properties>
+        </profile>
+    </profiles>
+  
+  
+</project>
+
+
+

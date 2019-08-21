@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.544" errors="0" skipped="0" tests="2" name="com.liferay62.portlet.formulario.FormularioTest">
+  <properties>
+    <property name="env.DESKTOP_SESSION" value="ubuntu"/>
+    <property name="env.OLDPWD" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="liferay.lib.global.shared.dir" value="/home/asaugarl/.m2/repository/javax/servlet/servlet-api/2.5/"/>
+    <property name="java.home" value="/opt/programs/java/jdk1.7.0_80/jre"/>
+    <property name="com.liferay.portal.kernel.memory.FinalizeManager.thread.enabled" value="false"/>
+    <property name="env.DISPLAY" value=":0"/>
+    <property name="com.liferay.portal.kernel.util.StreamUtil.buffer.size" value="8192"/>
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
+    <property name="env.XDG_VTNR" value="2"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="classworlds.conf" value="/opt/programs/maven/apache-maven-3.2.2/bin/m2.conf"/>
+    <property name="ical4j.validation.relaxed" value="true"/>
+    <property name="java.endorsed.dirs" value="/opt/programs/java/jdk1.7.0_80/jre/lib/endorsed"/>
+    <property name="env.LOGNAME" value="asaugarl"/>
+    <property name="env.USERNAME" value="asaugarl"/>
+    <property name="com.liferay.portal.kernel.security.SecureRandomUtil.buffer.size" value="65536"/>
+    <property name="env.XDG_SEAT" value="seat0"/>
+    <property name="env.LC_PAPER" value="es_ES.UTF-8"/>
+    <property name="env.SESSION_MANAGER" value="local/asl:@/tmp/.ICE-unix/2840,unix/asl:/tmp/.ICE-unix/2840"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="log.sanitizer.whitelist.characters" value="9,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126"/>
+    <property name="java.version" value="1.7.0_80"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="env.LANGUAGE" value="es:en"/>
+    <property name="env.GNOME_SHELL_SESSION_MODE" value="ubuntu"/>
+    <property name="env.XDG_MENU_PREFIX" value="gnome-"/>
+    <property name="com.liferay.util.Encryptor.provider.class" value="com.sun.crypto.provider.SunJCE"/>
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop"/>
+    <property name="liferay.web.portal.dir" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario/target/liferay-work/appServerPortalDir/"/>
+    <property name="log4j.configure.on.startup" value="true"/>
+    <property name="user.name" value="asaugarl"/>
+    <property name="env.LANG" value="es_ES.UTF-8"/>
+    <property name="env.LC_MONETARY" value="es_ES.UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="env.LC_NAME" value="es_ES.UTF-8"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s"/>
+    <property name="path.separator" value=":"/>
+    <property name="env.MAVEN_CMD_LINE_ARGS" value="clean package"/>
+    <property name="env.XMODIFIERS" value="@im=ibus"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="env.HOME" value="/home/asaugarl"/>
+    <property name="liferay.home" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario/liferay"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="env.GNOME_TERMINAL_SERVICE" value=":1.122"/>
+    <property name="cookie.http.only.names.excludes" value=""/>
+    <property name="env.LC_TELEPHONE" value="es_ES.UTF-8"/>
+    <property name="org.terracotta.quartz.skipUpdateCheck" value="true"/>
+    <property name="env._" value="/opt/programs/maven/apache-maven-3.2.2/bin/mvn"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="env.LC_IDENTIFICATION" value="es_ES.UTF-8"/>
+    <property name="user.language" value="en"/>
+    <property name="line.separator" value="
+"/>
+    <property name="liferay.lib.global.dir" value="/home/asaugarl/.m2/repository/com/liferay/portal/portal-service/6.2.5/"/>
+    <property name="default.liferay.home" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario/liferay"/>
+    <property name="env.SSH_AGENT_PID" value="2917"/>
+    <property name="com.liferay.util.axis.SimpleHTTPSender.regexp.pattern" value=".*mappoint.net.*"/>
+    <property name="env.CLUTTER_IM_MODULE" value="xim"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="http.header.secure.x.frame.options" value="true"/>
+    <property name="env.COLORTERM" value="truecolor"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="env.TEXTDOMAIN" value="im-config"/>
+    <property name="org.quartz.threadPool.makeThreadsDaemons" value="true"/>
+    <property name="env.LC_MEASUREMENT" value="es_ES.UTF-8"/>
+    <property name="env.IM_CONFIG_PHASE" value="2"/>
+    <property name="log.sanitizer.enabled" value="true"/>
+    <property name="env.LC_TIME" value="es_ES.UTF-8"/>
+    <property name="env.GDMSESSION" value="ubuntu"/>
+    <property name="env.QT_ACCESSIBILITY" value="1"/>
+    <property name="ical4j.parsing.relaxed" value="true"/>
+    <property name="env.XDG_SESSION_DESKTOP" value="ubuntu"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="env.VTE_VERSION" value="5202"/>
+    <property name="env.XDG_SESSION_TYPE" value="x11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="env.TERM" value="xterm-256color"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="com.liferay.portal.kernel.util.StringBundler.unsafe.create.limit" value="0"/>
+    <property name="env.QT_IM_MODULE" value="ibus"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="env.PATH" value="/opt/programs/java/jdk1.7.0_80/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/programs/java/jdk1.7.0_80/bin:/home/asaugarl/jpm/bin:/opt/programs/ant/apache-ant-1.9.14/bin:/opt/programs/maven/apache-maven-3.2.2/bin:/home/asaugarl/jpm/bin"/>
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="env.TEXTDOMAINDIR" value="/usr/share/locale/"/>
+    <property name="external-properties" value="com/liferay/portal/tools/dependencies/portal-tools.properties"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="env.SHLVL" value="1"/>
+    <property name="ical4j.compatibility.outlook" value="true"/>
+    <property name="jruby.native.enabled" value="false"/>
+    <property name="ical4j.unfolding.relaxed" value="true"/>
+    <property name="sun.boot.library.path" value="/opt/programs/java/jdk1.7.0_80/jre/lib/amd64"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="liferay.lib.portal.dir" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario/target/liferay-work/appServerPortalDir/WEB-INF/lib/"/>
+    <property name="env.USER" value="asaugarl"/>
+    <property name="env.GTK_IM_MODULE" value="ibus"/>
+    <property name="env.GTK_MODULES" value="gail:atk-bridge"/>
+    <property name="com.liferay.portal.kernel.util.StringBundler.threadlocal.buffer.limit" value="0"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="env.MAVEN_HOME" value="/opt/programs/maven/apache-maven-3.2.2"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.ext.dirs" value="/opt/programs/java/jdk1.7.0_80/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="os.version" value="4.15.0-58-generic"/>
+    <property name="user.home" value="/home/asaugarl"/>
+    <property name="env.XDG_CURRENT_DESKTOP" value="ubuntu:GNOME"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="env.JAVA_HOME" value="/opt/programs/java/jdk1.7.0_80"/>
+    <property name="base.path" value="."/>
+    <property name="env.XDG_SESSION_ID" value="2"/>
+    <property name="env.XAUTHORITY" value="/run/user/1000/gdm/Xauthority"/>
+    <property name="user.dir" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario"/>
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"/>
+    <property name="env.WINDOWPATH" value="2"/>
+    <property name="com.sun.media.jai.disableMediaLib" value="true"/>
+    <property name="ehcache.disk.store.dir" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario/liferay/data/ehcache"/>
+    <property name="env.PWD" value="/mnt/datos/workspace/eclipse/pruebaLiferay/FormularioRegistro/portlets/Formulario"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="http.header.secure.x.xss.protection" value="1"/>
+    <property name="env.GNOME_TERMINAL_SCREEN" value="/org/gnome/Terminal/screen/71b488ff_b6be_476b_be1c_c10120057d4e"/>
+    <property name="java.vm.version" value="24.80-b11"/>
+    <property name="java.class.path" value="/opt/programs/maven/apache-maven-3.2.2/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="env.LC_ADDRESS" value="es_ES.UTF-8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="env.LC_NUMERIC" value="es_ES.UTF-8"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="log.sanitizer.replacement.character" value="95"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="env.DESKTOP_AUTOSTART_ID" value="10c3a15ba3424dfe3f156627911176008200000028400007"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="sun.boot.class.path" value="/opt/programs/java/jdk1.7.0_80/jre/lib/resources.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/rt.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/sunrsasign.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/jsse.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/jce.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/charsets.jar:/opt/programs/java/jdk1.7.0_80/jre/lib/jfr.jar:/opt/programs/java/jdk1.7.0_80/jre/classes"/>
+    <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh"/>
+    <property name="env.QT4_IM_MODULE" value="xim"/>
+    <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000"/>
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/etc/xdg"/>
+    <property name="http.header.secure.x.frame.options.255" value="/|SAMEORIGIN"/>
+    <property name="user.country" value="US"/>
+    <property name="env.ANT_HOME" value="/opt/programs/ant/apache-ant-1.9.14"/>
+    <property name="log.sanitizer.escape.html.enabled" value="false"/>
+    <property name="env.SHELL" value="/bin/bash"/>
+    <property name="maven.home" value="/opt/programs/maven/apache-maven-3.2.2"/>
+    <property name="http.header.secure.x.content.type.options" value="true"/>
+    <property name="net.sf.ehcache.skipUpdateCheck" value="true"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="com.liferay.portal.kernel.util.StreamUtil.force.tio" value="false"/>
+    <property name="com.liferay.util.servlet.SessionParameters" value="false"/>
+    <property name="env.GPG_AGENT_INFO" value="/run/user/1000/gnupg/S.gpg-agent:0:1"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated"/>
+  </properties>
+  <testcase time="0.544" classname="com.liferay62.portlet.formulario.FormularioTest" name="testValiDateToday"/>
+  <testcase time="0" classname="com.liferay62.portlet.formulario.FormularioTest" name="testValidateDateNotToday"/>
+</testsuite>

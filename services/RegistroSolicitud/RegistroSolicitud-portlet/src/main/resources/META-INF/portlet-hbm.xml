@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.liferay62.servicio.model.Registro" />
+	<class name="com.liferay62.servicio.model.impl.RegistroImpl" table="RegistroSolicitud_Registro">
+		<cache usage="read-write" />
+		<id name="registroId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="nombre" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="apellido" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nacimiento" type="org.hibernate.type.TimestampType" />
+		<property name="alta" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

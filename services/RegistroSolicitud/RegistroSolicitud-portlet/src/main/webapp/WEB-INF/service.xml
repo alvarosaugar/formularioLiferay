@@ -1,0 +1,32 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.liferay62.servicio">
+	<namespace>RegistroSolicitud</namespace>
+	<entity name="Registro" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="registroId" type="long" primary="true" />
+
+		<column name="nombre" type="String" />
+		<column name="apellido" type="String" />
+		<column name="email" type="String" />
+		<column name="nacimiento" type="Date" />
+		<column name="alta" type="Date" />
+		
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="registroId" />
+		</order>
+
+		<!-- Finder methods -->
+		<finder name="Email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+
+
+		<!-- References -->
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetTag" />
+	</entity>
+</service-builder>
